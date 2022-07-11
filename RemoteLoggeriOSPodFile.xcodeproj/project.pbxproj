@@ -17,8 +17,6 @@
 		88CE701E287BEE4C006CD8FA /* RemoteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE7017287BEE4C006CD8FA /* RemoteLogger.swift */; };
 		88CE701F287BEE4C006CD8FA /* RequestLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE7019287BEE4C006CD8FA /* RequestLogModel.swift */; };
 		88CE7020287BEE4C006CD8FA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE701B287BEE4C006CD8FA /* File.swift */; };
-		88CE7023287BF096006CD8FA /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE7021287BF096006CD8FA /* RealmSwift.xcframework */; };
-		88CE7025287BF096006CD8FA /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE7022287BF096006CD8FA /* Realm.xcframework */; };
 		88CE702E287BF0DB006CD8FA /* LocalStorageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE7029287BF0DB006CD8FA /* LocalStorageEngine.swift */; };
 		88CE7030287BF0DB006CD8FA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE702D287BF0DB006CD8FA /* Extension.swift */; };
 		88CE7033287BFBC1006CD8FA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE7032287BFBC1006CD8FA /* Reachability.swift */; };
@@ -37,8 +35,6 @@
 		88CE7017287BEE4C006CD8FA /* RemoteLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLogger.swift; sourceTree = "<group>"; };
 		88CE7019287BEE4C006CD8FA /* RequestLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogModel.swift; sourceTree = "<group>"; };
 		88CE701B287BEE4C006CD8FA /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		88CE7021287BF096006CD8FA /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = "RemoteLoggeriOSPodFile/Realm Framework/RealmSwift.xcframework"; sourceTree = "<group>"; };
-		88CE7022287BF096006CD8FA /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = "RemoteLoggeriOSPodFile/Realm Framework/Realm.xcframework"; sourceTree = "<group>"; };
 		88CE7029287BF0DB006CD8FA /* LocalStorageEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageEngine.swift; sourceTree = "<group>"; };
 		88CE702D287BF0DB006CD8FA /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		88CE7032287BFBC1006CD8FA /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -49,8 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CE7023287BF096006CD8FA /* RealmSwift.xcframework in Frameworks */,
-				88CE7025287BF096006CD8FA /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +85,6 @@
 		88CE7007287BE555006CD8FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7022287BF096006CD8FA /* Realm.xcframework */,
-				88CE7021287BF096006CD8FA /* RealmSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
