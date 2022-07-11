@@ -46,7 +46,7 @@ class LocalStorageEngine: NSObject {
     func deleteRemoteLoggerInfo(with loggerDateId: String) -> Bool {
         do {
             let realm = try Realm()
-            let objToDelete = realm.objects(LoggerCode.self).filter("loggerDate == %@", loggerDateId)
+            let objToDelete = realm.objects(LoggerCode.self).filter("loggerDateId == %@", loggerDateId)
             
             try realm.write {
                 realm.delete(objToDelete)
@@ -61,3 +61,40 @@ class LocalStorageEngine: NSObject {
 
 
 
+
+extension Results {
+    func toArray() -> [Element] {
+        let result = List<Element>()
+        
+        forEach {
+            result.append($0)
+        }
+        
+        return Array(result.detached())
+    }
+}
+
+extension List: DetachableObject {
+    func detached() -> List<Element> {
+        let result = List<Element>()
+        
+        forEach {
+            if let detachable = $0 as? DetachableObject {
+                let detached = detachable.detached() as! Element
+                result.append(detached)
+            } else {
+                result.append($0) //Primtives are pass by value; don't need to recreate
+            }
+        }
+        
+        return result
+    }
+    
+    func toArray() -> [Element] {
+        return Array(self.detached())
+    }
+}
+
+protocol DetachableObject: AnyObject {
+    func detached() -> Self
+}
