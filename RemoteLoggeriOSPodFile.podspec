@@ -25,6 +25,7 @@ s.source = { :git => "https://github.com/arhirapara76/RemoteLoggeriOSPodFile.git
 
 # 7
 s.framework = "UIKit"
+s.dependency 'RealmSwift'
 
 # 8
 s.source_files = "RemoteLoggeriOSPodFile/**/*.{swift}"
