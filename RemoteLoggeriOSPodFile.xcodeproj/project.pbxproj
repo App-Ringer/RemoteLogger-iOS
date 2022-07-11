@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88CE6FC7287BDEA5006CD8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FC6287BDEA5006CD8FA /* ViewController.swift */; };
+		88CE6FCA287BDEA5006CD8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE6FC8287BDEA5006CD8FA /* Main.storyboard */; };
+		88CE6FCC287BDEA6006CD8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */; };
+		88CE6FCF287BDEA6006CD8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE6FCD287BDEA6006CD8FA /* LaunchScreen.storyboard */; };
+		88CE6FDF287BDEE9006CD8FA /* RemoteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FD7287BDEE8006CD8FA /* RemoteLogger.swift */; };
+		88CE6FE0287BDEE9006CD8FA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FD9287BDEE8006CD8FA /* File.swift */; };
+		88CE6FE1287BDEE9006CD8FA /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FDB287BDEE9006CD8FA /* ApiCall.swift */; };
+		88CE6FE2287BDEE9006CD8FA /* Webservice+EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FDC287BDEE9006CD8FA /* Webservice+EndPoints.swift */; };
+		88CE6FE3287BDEE9006CD8FA /* RequestLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FDE287BDEE9006CD8FA /* RequestLogModel.swift */; };
+		88CE6FE5287BDF14006CD8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FE4287BDF14006CD8FA /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88CE6FBF287BDEA5006CD8FA /* RemoteLoggeriOSPodFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteLoggeriOSPodFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88CE6FC6287BDEA5006CD8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88CE6FC9287BDEA5006CD8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88CE6FCE287BDEA6006CD8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88CE6FD0287BDEA6006CD8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88CE6FD7287BDEE8006CD8FA /* RemoteLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLogger.swift; sourceTree = "<group>"; };
+		88CE6FD9287BDEE8006CD8FA /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		88CE6FDB287BDEE9006CD8FA /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		88CE6FDC287BDEE9006CD8FA /* Webservice+EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Webservice+EndPoints.swift"; sourceTree = "<group>"; };
+		88CE6FDE287BDEE9006CD8FA /* RequestLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogModel.swift; sourceTree = "<group>"; };
+		88CE6FE4287BDF14006CD8FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88CE6FBC287BDEA5006CD8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88CE6FB6287BDEA5006CD8FA = {
+			isa = PBXGroup;
+			children = (
+				88CE6FC1287BDEA5006CD8FA /* RemoteLoggeriOSPodFile */,
+				88CE6FC0287BDEA5006CD8FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88CE6FC0287BDEA5006CD8FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FBF287BDEA5006CD8FA /* RemoteLoggeriOSPodFile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88CE6FC1287BDEA5006CD8FA /* RemoteLoggeriOSPodFile */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FDA287BDEE9006CD8FA /* ApiCall */,
+				88CE6FD8287BDEE8006CD8FA /* Helper */,
+				88CE6FDD287BDEE9006CD8FA /* Model */,
+				88CE6FD6287BDEE8006CD8FA /* RemoteLogger */,
+				88CE6FC6287BDEA5006CD8FA /* ViewController.swift */,
+				88CE6FE4287BDF14006CD8FA /* AppDelegate.swift */,
+				88CE6FC8287BDEA5006CD8FA /* Main.storyboard */,
+				88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */,
+				88CE6FCD287BDEA6006CD8FA /* LaunchScreen.storyboard */,
+				88CE6FD0287BDEA6006CD8FA /* Info.plist */,
+			);
+			path = RemoteLoggeriOSPodFile;
+			sourceTree = "<group>";
+		};
+		88CE6FD6287BDEE8006CD8FA /* RemoteLogger */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FD7287BDEE8006CD8FA /* RemoteLogger.swift */,
+			);
+			path = RemoteLogger;
+			sourceTree = "<group>";
+		};
+		88CE6FD8287BDEE8006CD8FA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FD9287BDEE8006CD8FA /* File.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		88CE6FDA287BDEE9006CD8FA /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FDB287BDEE9006CD8FA /* ApiCall.swift */,
+				88CE6FDC287BDEE9006CD8FA /* Webservice+EndPoints.swift */,
+			);
+			path = ApiCall;
+			sourceTree = "<group>";
+		};
+		88CE6FDD287BDEE9006CD8FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88CE6FDE287BDEE9006CD8FA /* RequestLogModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88CE6FBE287BDEA5006CD8FA /* RemoteLoggeriOSPodFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88CE6FD3287BDEA6006CD8FA /* Build configuration list for PBXNativeTarget "RemoteLoggeriOSPodFile" */;
+			buildPhases = (
+				88CE6FBB287BDEA5006CD8FA /* Sources */,
+				88CE6FBC287BDEA5006CD8FA /* Frameworks */,
+				88CE6FBD287BDEA5006CD8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteLoggeriOSPodFile;
+			productName = RemoteLoggeriOSPodFile;
+			productReference = 88CE6FBF287BDEA5006CD8FA /* RemoteLoggeriOSPodFile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88CE6FB7287BDEA5006CD8FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					88CE6FBE287BDEA5006CD8FA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 88CE6FBA287BDEA5006CD8FA /* Build configuration list for PBXProject "RemoteLoggeriOSPodFile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88CE6FB6287BDEA5006CD8FA;
+			productRefGroup = 88CE6FC0287BDEA5006CD8FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88CE6FBE287BDEA5006CD8FA /* RemoteLoggeriOSPodFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88CE6FBD287BDEA5006CD8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CE6FCF287BDEA6006CD8FA /* LaunchScreen.storyboard in Resources */,
+				88CE6FCC287BDEA6006CD8FA /* Assets.xcassets in Resources */,
+				88CE6FCA287BDEA5006CD8FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88CE6FBB287BDEA5006CD8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CE6FE1287BDEE9006CD8FA /* ApiCall.swift in Sources */,
+				88CE6FC7287BDEA5006CD8FA /* ViewController.swift in Sources */,
+				88CE6FE0287BDEE9006CD8FA /* File.swift in Sources */,
+				88CE6FE3287BDEE9006CD8FA /* RequestLogModel.swift in Sources */,
+				88CE6FE5287BDF14006CD8FA /* AppDelegate.swift in Sources */,
+				88CE6FDF287BDEE9006CD8FA /* RemoteLogger.swift in Sources */,
+				88CE6FE2287BDEE9006CD8FA /* Webservice+EndPoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88CE6FC8287BDEA5006CD8FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88CE6FC9287BDEA5006CD8FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88CE6FCD287BDEA6006CD8FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88CE6FCE287BDEA6006CD8FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88CE6FD1287BDEA6006CD8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88CE6FD2287BDEA6006CD8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88CE6FD4287BDEA6006CD8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggeriOSPodFile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AR.RemoteLoggeriOSPodFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88CE6FD5287BDEA6006CD8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggeriOSPodFile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AR.RemoteLoggeriOSPodFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88CE6FBA287BDEA5006CD8FA /* Build configuration list for PBXProject "RemoteLoggeriOSPodFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CE6FD1287BDEA6006CD8FA /* Debug */,
+				88CE6FD2287BDEA6006CD8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88CE6FD3287BDEA6006CD8FA /* Build configuration list for PBXNativeTarget "RemoteLoggeriOSPodFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CE6FD4287BDEA6006CD8FA /* Debug */,
+				88CE6FD5287BDEA6006CD8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88CE6FB7287BDEA5006CD8FA /* Project object */;
+}
