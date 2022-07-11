@@ -1,0 +1,11 @@
+framework module RemoteLoggerFramework {
+  umbrella header "RemoteLoggerFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module RemoteLoggerFramework.Swift {
+    header "RemoteLoggerFramework-Swift.h"
+    requires objc
+}
