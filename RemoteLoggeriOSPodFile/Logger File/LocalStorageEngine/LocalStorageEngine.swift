@@ -46,7 +46,7 @@ class LocalStorageEngine: NSObject {
     func deleteRemoteLoggerInfo(with loggerDateId: String) -> Bool {
         do {
             let realm = try Realm()
-            let objToDelete = realm.objects(LoggerCode.self).filter("loggerDate == %@", loggerDateId)
+            let objToDelete = realm.objects(LoggerCode.self).filter("loggerDateId == %@", loggerDateId)
             
             try realm.write {
                 realm.delete(objToDelete)
