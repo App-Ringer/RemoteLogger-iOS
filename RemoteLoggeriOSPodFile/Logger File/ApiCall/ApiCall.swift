@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class ApiCall {
     static let shared = ApiCall()
     

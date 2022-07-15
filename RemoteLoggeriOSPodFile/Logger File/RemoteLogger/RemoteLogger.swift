@@ -16,7 +16,7 @@ public class RemoteLogger {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLogger.setLocalDataInRealm(withTag: tag)
             } else {
-                print("Please register your app")
+                print("API key is missing")
             }
         }
     }
@@ -26,21 +26,50 @@ public class RemoteLogger {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLogger.setLocalDataInRealm(level: level)
             } else {
-                print("Please register your app")
+                print("API key is missing")
             }
         }
-        print("level: ", level)
     }
     
-    public class func log(_ desc: String, tag: String = "")  {
+    public class func log(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc)
+                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, json: json)
+                //(withTag: tag, desc: desc)
             } else {
-                print("Please register your app")
+                print("API key is missing")
             }
         }
-        print("desc: ", desc, "  tag: ", tag)
+    }
+    
+    public class func debug(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
+        DispatchQueue.main.async {
+            if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
+                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "debug", json: json)
+            } else {
+                print("API key is missing")
+            }
+        }
+    }
+    
+    public class func info(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
+        DispatchQueue.main.async {
+            if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
+                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "info", json: json)
+            } else {
+                print("API key is missing")
+            }
+        }
+    }
+    
+    public class func error(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
+        DispatchQueue.main.async {
+            if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
+                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "error", json: json)
+            } else {
+                print("API key is missing")
+            }
+        }
     }
     
     public class func register(_ register: String)  {
@@ -53,14 +82,18 @@ public class RemoteLogger {
                 UserDefaults.standard.set("", forKey: UserDefaultKeys.userRegisterValue.rawValue)
             }
         }
-        print("register: ", register)
     }
     
-    private class func setLocalDataInRealm(withTag tag: String = "", desc: String = "", level: String = "") {
+    private class func setLocalDataInRealm(withTag tag: String = "", desc: String = "", level: String = "", json: [String:Any] = [:]) {
         let loggerCodeObject = LoggerCode()
         loggerCodeObject.loggerTag = tag
         loggerCodeObject.loggerDesc = desc
         loggerCodeObject.loggerSetLevel = level
+        if let jsonData = try? JSONSerialization.data(withJSONObject: json, options: []) {
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                loggerCodeObject.loggerJsonString = jsonString
+            }
+        }
         LocalStorageEngine.shared.saveRemoteLoggerLocally(companyCodes: loggerCodeObject) { isFailed in
             print("isFailed: ", isFailed)
         } completion: { isSucess in
@@ -77,7 +110,7 @@ public class RemoteLogger {
             if !arrData.isEmpty {
                 for localObject in arrData {
                     if let object = localObject {
-                        let requestLogModel = RequestLogModel(level: object.loggerSetLevel, tag: object.loggerTag, description: object.loggerDesc)
+                        let requestLogModel = RequestLogModel(level: object.loggerSetLevel, tag: object.loggerTag, description: object.loggerDesc, jsonString: object.loggerJsonString)
                         ApiCall.shared.callSaveLogApi(dict: requestLogModel.toDataDict(), loggerDateId: object.loggerDateId)
                     }
                 }
