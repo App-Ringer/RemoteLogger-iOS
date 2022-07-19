@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88BFDECB2886D91000706F23 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BFDEC92886D91000706F23 /* Realm.xcframework */; };
+		88BFDECD2886D91000706F23 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BFDECA2886D91000706F23 /* RealmSwift.xcframework */; };
 		88CE6FC7287BDEA5006CD8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE6FC6287BDEA5006CD8FA /* ViewController.swift */; };
 		88CE6FCA287BDEA5006CD8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE6FC8287BDEA5006CD8FA /* Main.storyboard */; };
 		88CE6FCC287BDEA6006CD8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88BFDEC92886D91000706F23 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = RemoteLoggeriOSPodFile/13.1/Realm.xcframework; sourceTree = "<group>"; };
+		88BFDECA2886D91000706F23 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = RemoteLoggeriOSPodFile/13.1/RealmSwift.xcframework; sourceTree = "<group>"; };
 		88CE6FBF287BDEA5006CD8FA /* RemoteLoggeriOSPodFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteLoggeriOSPodFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CE6FC6287BDEA5006CD8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88CE6FC9287BDEA5006CD8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BFDECB2886D91000706F23 /* Realm.xcframework in Frameworks */,
+				88BFDECD2886D91000706F23 /* RealmSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,8 @@
 		88CE7007287BE555006CD8FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88BFDEC92886D91000706F23 /* Realm.xcframework */,
+				88BFDECA2886D91000706F23 /* RealmSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
