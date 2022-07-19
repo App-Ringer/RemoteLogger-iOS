@@ -1,4 +1,4 @@
-# RemoteLoggeriOSPodFile
+# RemoteLogger-iOS
 
 
 ## Configure
