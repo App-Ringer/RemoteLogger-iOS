@@ -16,7 +16,7 @@ public class RemoteLoggeriOS {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(withTag: tag)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
@@ -26,7 +26,7 @@ public class RemoteLoggeriOS {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(level: level)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
@@ -35,9 +35,8 @@ public class RemoteLoggeriOS {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, json: json)
-                //(withTag: tag, desc: desc)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
@@ -47,7 +46,7 @@ public class RemoteLoggeriOS {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "debug", json: json)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
@@ -57,7 +56,7 @@ public class RemoteLoggeriOS {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "info", json: json)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
@@ -67,7 +66,7 @@ public class RemoteLoggeriOS {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
                 RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "error", json: json)
             } else {
-                print("API key is missing")
+                print("RemoteLoggeriOS    =======    API key is missing   =======")
             }
         }
     }
