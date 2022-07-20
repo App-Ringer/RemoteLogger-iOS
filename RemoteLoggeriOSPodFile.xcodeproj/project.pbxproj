@@ -11,7 +11,7 @@
 		88AD97E0288812A400C6CFBF /* Webservice+EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97D2288812A400C6CFBF /* Webservice+EndPoints.swift */; };
 		88AD97E1288812A400C6CFBF /* LocalStorageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97D4288812A400C6CFBF /* LocalStorageEngine.swift */; };
 		88AD97E2288812A400C6CFBF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97D6288812A400C6CFBF /* Extension.swift */; };
-		88AD97E3288812A400C6CFBF /* RemoteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97D8288812A400C6CFBF /* RemoteLogger.swift */; };
+		88AD97E3288812A400C6CFBF /* RemoteLoggeriOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97D8288812A400C6CFBF /* RemoteLoggeriOS.swift */; };
 		88AD97E4288812A400C6CFBF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97DA288812A400C6CFBF /* Reachability.swift */; };
 		88AD97E5288812A400C6CFBF /* RequestLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97DC288812A400C6CFBF /* RequestLogModel.swift */; };
 		88AD97E6288812A400C6CFBF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD97DE288812A400C6CFBF /* File.swift */; };
@@ -29,7 +29,7 @@
 		88AD97D2288812A400C6CFBF /* Webservice+EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Webservice+EndPoints.swift"; sourceTree = "<group>"; };
 		88AD97D4288812A400C6CFBF /* LocalStorageEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageEngine.swift; sourceTree = "<group>"; };
 		88AD97D6288812A400C6CFBF /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		88AD97D8288812A400C6CFBF /* RemoteLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLogger.swift; sourceTree = "<group>"; };
+		88AD97D8288812A400C6CFBF /* RemoteLoggeriOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLoggeriOS.swift; sourceTree = "<group>"; };
 		88AD97DA288812A400C6CFBF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		88AD97DC288812A400C6CFBF /* RequestLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogModel.swift; sourceTree = "<group>"; };
 		88AD97DE288812A400C6CFBF /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 				88AD97D4288812A400C6CFBF /* LocalStorageEngine.swift */,
 				88AD97D1288812A400C6CFBF /* ApiCall.swift */,
 				88AD97D2288812A400C6CFBF /* Webservice+EndPoints.swift */,
-				88AD97D8288812A400C6CFBF /* RemoteLogger.swift */,
+				88AD97D8288812A400C6CFBF /* RemoteLoggeriOS.swift */,
 				88AD97DA288812A400C6CFBF /* Reachability.swift */,
 				88AD97DC288812A400C6CFBF /* RequestLogModel.swift */,
 				88AD97D6288812A400C6CFBF /* Extension.swift */,
@@ -186,7 +186,7 @@
 				88AD97E1288812A400C6CFBF /* LocalStorageEngine.swift in Sources */,
 				88AD97E5288812A400C6CFBF /* RequestLogModel.swift in Sources */,
 				88CE6FC7287BDEA5006CD8FA /* ViewController.swift in Sources */,
-				88AD97E3288812A400C6CFBF /* RemoteLogger.swift in Sources */,
+				88AD97E3288812A400C6CFBF /* RemoteLoggeriOS.swift in Sources */,
 				88AD97DF288812A400C6CFBF /* ApiCall.swift in Sources */,
 				88AD97E6288812A400C6CFBF /* File.swift in Sources */,
 				88AD97E2288812A400C6CFBF /* Extension.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  RemoteLogger.swift
+//  RemoteLoggeriOS.swift
 //  RemoteLoggerFramework
 //
 //  Created by iMac on 06/07/22.
@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-public class RemoteLogger {
+public class RemoteLoggeriOS {
     
     public class func setTag(_ tag: String)  {
         print("tag: ", tag)
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag)
+                RemoteLoggeriOS.setLocalDataInRealm(withTag: tag)
             } else {
                 print("API key is missing")
             }
@@ -24,7 +24,7 @@ public class RemoteLogger {
     public class func setLevel(_ level: String)  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(level: level)
+                RemoteLoggeriOS.setLocalDataInRealm(level: level)
             } else {
                 print("API key is missing")
             }
@@ -34,7 +34,7 @@ public class RemoteLogger {
     public class func log(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, json: json)
+                RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, json: json)
                 //(withTag: tag, desc: desc)
             } else {
                 print("API key is missing")
@@ -45,7 +45,7 @@ public class RemoteLogger {
     public class func debug(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "debug", json: json)
+                RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "debug", json: json)
             } else {
                 print("API key is missing")
             }
@@ -55,7 +55,7 @@ public class RemoteLogger {
     public class func info(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "info", json: json)
+                RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "info", json: json)
             } else {
                 print("API key is missing")
             }
@@ -65,7 +65,7 @@ public class RemoteLogger {
     public class func error(_ desc: String, tag: String = "", json: [String:Any] = [:])  {
         DispatchQueue.main.async {
             if UserDefaults.standard.bool(forKey: UserDefaultKeys.isUserRegister.rawValue) {
-                RemoteLogger.setLocalDataInRealm(withTag: tag, desc: desc, level: "error", json: json)
+                RemoteLoggeriOS.setLocalDataInRealm(withTag: tag, desc: desc, level: "error", json: json)
             } else {
                 print("API key is missing")
             }
@@ -98,7 +98,7 @@ public class RemoteLogger {
             print("isFailed: ", isFailed)
         } completion: { isSucess in
             DispatchQueue.main.async {
-                RemoteLogger.addLocalDataBaseCallApi()
+                RemoteLoggeriOS.addLocalDataBaseCallApi()
             }
             print("isSucess: ", isSucess)
         }
