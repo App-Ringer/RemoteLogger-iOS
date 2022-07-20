@@ -79,7 +79,15 @@
 			children = (
 				88CE7012287BEE4C006CD8FA /* Logger File */,
 				88CE6FC6287BDEA5006CD8FA /* ViewController.swift */,
+				88CE702D287BF0DB006CD8FA /* Extension.swift */,
+				88CE7014287BEE4C006CD8FA /* ApiCall.swift */,
+				88CE701B287BEE4C006CD8FA /* File.swift */,
+				88CE7019287BEE4C006CD8FA /* RequestLogModel.swift */,
+				88CE7015287BEE4C006CD8FA /* Webservice+EndPoints.swift */,
+				88CE7017287BEE4C006CD8FA /* RemoteLogger.swift */,
+				88CE7029287BF0DB006CD8FA /* LocalStorageEngine.swift */,
 				88CE6FE4287BDF14006CD8FA /* AppDelegate.swift */,
+				88CE7032287BFBC1006CD8FA /* Reachability.swift */,
 				88CE6FC8287BDEA5006CD8FA /* Main.storyboard */,
 				88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */,
 				88CE6FCD287BDEA6006CD8FA /* LaunchScreen.storyboard */,
@@ -114,8 +122,6 @@
 		88CE7013287BEE4C006CD8FA /* ApiCall */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7014287BEE4C006CD8FA /* ApiCall.swift */,
-				88CE7015287BEE4C006CD8FA /* Webservice+EndPoints.swift */,
 			);
 			path = ApiCall;
 			sourceTree = "<group>";
@@ -123,7 +129,6 @@
 		88CE7016287BEE4C006CD8FA /* RemoteLogger */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7017287BEE4C006CD8FA /* RemoteLogger.swift */,
 			);
 			path = RemoteLogger;
 			sourceTree = "<group>";
@@ -131,7 +136,6 @@
 		88CE7018287BEE4C006CD8FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7019287BEE4C006CD8FA /* RequestLogModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,7 +143,6 @@
 		88CE701A287BEE4C006CD8FA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				88CE701B287BEE4C006CD8FA /* File.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -147,7 +150,6 @@
 		88CE7028287BF0DB006CD8FA /* LocalStorageEngine */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7029287BF0DB006CD8FA /* LocalStorageEngine.swift */,
 			);
 			path = LocalStorageEngine;
 			sourceTree = "<group>";
@@ -155,7 +157,6 @@
 		88CE702C287BF0DB006CD8FA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				88CE702D287BF0DB006CD8FA /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 		88CE7031287BFBB8006CD8FA /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				88CE7032287BFBC1006CD8FA /* Reachability.swift */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
