@@ -57,21 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88AD97CF288812A400C6CFBF /* LoggerFile */ = {
-			isa = PBXGroup;
-			children = (
-				88AD97D4288812A400C6CFBF /* LocalStorageEngine.swift */,
-				88AD97D1288812A400C6CFBF /* ApiCall.swift */,
-				88AD97D2288812A400C6CFBF /* Webservice+EndPoints.swift */,
-				88AD97D8288812A400C6CFBF /* RemoteLoggeriOS.swift */,
-				88AD97DA288812A400C6CFBF /* Reachability.swift */,
-				88AD97DC288812A400C6CFBF /* RequestLogModel.swift */,
-				88AD97D6288812A400C6CFBF /* Extension.swift */,
-				88AD97DE288812A400C6CFBF /* File.swift */,
-			);
-			path = LoggerFile;
-			sourceTree = "<group>";
-		};
 		88CE6FB6287BDEA5006CD8FA = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +77,16 @@
 		88CE6FC1287BDEA5006CD8FA /* RemoteLoggeriOSPodFile */ = {
 			isa = PBXGroup;
 			children = (
-				88AD97CF288812A400C6CFBF /* LoggerFile */,
-				88CE6FC6287BDEA5006CD8FA /* ViewController.swift */,
 				88CE6FE4287BDF14006CD8FA /* AppDelegate.swift */,
+				88CE6FC6287BDEA5006CD8FA /* ViewController.swift */,
+				88AD97D4288812A400C6CFBF /* LocalStorageEngine.swift */,
+				88AD97D1288812A400C6CFBF /* ApiCall.swift */,
+				88AD97D2288812A400C6CFBF /* Webservice+EndPoints.swift */,
+				88AD97D8288812A400C6CFBF /* RemoteLoggeriOS.swift */,
+				88AD97DA288812A400C6CFBF /* Reachability.swift */,
+				88AD97DC288812A400C6CFBF /* RequestLogModel.swift */,
+				88AD97D6288812A400C6CFBF /* Extension.swift */,
+				88AD97DE288812A400C6CFBF /* File.swift */,
 				88CE6FC8287BDEA5006CD8FA /* Main.storyboard */,
 				88CE6FCB287BDEA6006CD8FA /* Assets.xcassets */,
 				88CE6FCD287BDEA6006CD8FA /* LaunchScreen.storyboard */,

@@ -8,7 +8,7 @@ s.summary = "RemoteLoggeriOS create pod."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.22"
+s.version = "0.1.23"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -29,7 +29,7 @@ s.dependency 'RealmSwift'
 
 # 8
 #s.source_files = "RemoteLoggeriOS/**/*.{h,m,swift}"
-s.source_files = "RemoteLoggeriOSPodFile", "RemoteLoggeriOS/LoggerFile/**/*.{swift}"
+s.source_files = "RemoteLoggeriOSPodFile", "RemoteLoggeriOS/**/*.{swift}"
 
 # 9
 #s.resources = "RemoteLoggeriOSPodFile", "RemoteLoggeriOS/*.{storyboard,xib}"
