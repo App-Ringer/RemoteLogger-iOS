@@ -29,13 +29,17 @@ class ApiCall {
                             print(String(describing: error))
                             return
                         }
-                        if let _ = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                            let isSucess = LocalStorageEngine.shared.deleteRemoteLoggerInfo(with: loggerDateId)
-                            print("Delete Local Data: ", isSucess)
+                        if let dictData = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                            if let code = dictData["code"] as? Int, code == 200 {
+                                let isSucess = LocalStorageEngine.shared.deleteRemoteLoggerInfo(with: loggerDateId)
+                                print("Delete Local Data: ", isSucess)
+                            }
                         }
                         print(String(data: data, encoding: .utf8)!)
                     }
                     task.resume()
+                } else {
+                    print("RemoteLoggeriOS    =======    API key is missing   =======")
                 }
             }
         }
