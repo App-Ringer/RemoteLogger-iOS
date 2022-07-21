@@ -8,7 +8,7 @@ s.summary = "RemoteLoggeriOS create pod."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.24"
+s.version = "0.1.25"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

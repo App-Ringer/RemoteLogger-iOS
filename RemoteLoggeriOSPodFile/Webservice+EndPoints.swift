@@ -8,7 +8,6 @@
 import Foundation
 
 let baseUrl =  "https://logs.appringer.in/api/"
-let hederXApiKeyValue = "TT"
 
 enum EndPoint : String {
     case log = "log"
