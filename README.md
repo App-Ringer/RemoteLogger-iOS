@@ -13,7 +13,7 @@ pod 'RemoteLoggeriOS'
 ### OR
 
 ```ruby
-pod 'RemoteLoggeriOS', '~> 0.1.24'
+pod 'RemoteLoggeriOS', '~> 0.1.27'
 ```
 
 
